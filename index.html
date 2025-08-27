@@ -1,53 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Instagram Clone</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>โซเชียลมีเดียแบบ X</title>
 </head>
 <body>
+    <header>
+        <h1>My Social X</h1>
+        <nav>
+            <ul>
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">แจ้งเตือน</a></li>
+                <li><a href="#">ข้อความ</a></li>
+                <li><a href="#">โปรไฟล์</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <div class="header">
-    <h1 class="logo">Instagram</h1>
-  </div>
+    <main>
+        <section id="tweet-box">
+            <h2>ทวีตใหม่</h2>
+            <form>
+                <textarea rows="3" cols="50" placeholder="อะไรใหม่?"></textarea><br/>
+                <button type="submit">ทวีต</button>
+            </form>
+        </section>
 
-  <!-- Post feed -->
-  <div class="feed">
-    <div class="post">
-      <div class="post-header">
-        <img src="https://via.placeholder.com/40" class="avatar">
-        <span class="username">username_1</span>
-      </div>
-      <img src="https://via.placeholder.com/400x400" class="post-image">
-      <div class="post-actions">
-        ❤️ 💬 📤
-      </div>
-      <div class="post-caption">
-        <strong>username_1</strong> Nice view!
-      </div>
-    </div>
+        <section id="feed">
+            <h2>ฟีดโพสต์</h2>
 
-    <div class="post">
-      <div class="post-header">
-        <img src="https://via.placeholder.com/40" class="avatar">
-        <span class="username">username_2</span>
-      </div>
-      <img src="https://via.placeholder.com/400x400" class="post-image">
-      <div class="post-actions">
-        ❤️ 💬 📤
-      </div>
-      <div class="post-caption">
-        <strong>username_2</strong> Hello world!
-      </div>
-    </div>
-  </div>
+            <article class="tweet">
+                <header>
+                    <strong>ผู้ใช้1</strong> <span>@user1</span>
+                </header>
+                <p>สวัสดีครับ นี่คือโพสต์แรกของผม!</p>
+                <footer>
+                    <small>10 นาทีที่แล้ว</small>
+                </footer>
+            </article>
 
-  <!-- Bottom nav -->
-  <div class="bottom-nav">
-    🏠 🔍 ➕ ❤️ 👤
-  </div>
+            <article class="tweet">
+                <header>
+                    <strong>ผู้ใช้2</strong> <span>@user2</span>
+                </header>
+                <p>กำลังเรียนรู้การทำเว็บไซต์โซเชียลมีเดียอยู่ครับ!</p>
+                <footer>
+                    <small>30 นาทีที่แล้ว</small>
+                </footer>
+            </article>
 
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Social X</p>
+    </footer>
 </body>
 </html>
